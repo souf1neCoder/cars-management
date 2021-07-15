@@ -1,0 +1,89 @@
+:root{
+    --first-color:#52006A;
+    --main-color:#CD113B;
+    --second-color:#FF7600;
+    --black-hell:#171717;
+    --opacity:.6;
+    --font-moy:500;
+    --font-moy-plus:600;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+/*  */
+body{
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+.logo a,.logo a:hover{
+    text-decoration: none;
+}
+.logo a{
+    color: var(--black-hell);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+.logo span,.logo i{
+    color: var(--main-color);
+}
+/*  */
+main{
+    width: 100%;
+}
+form{
+    width: 80%;
+    margin: 3rem auto;
+
+}
+label {
+    margin-bottom: 0;
+    color: var(--black-hell);
+    opacity: var(--opacity);
+    font-weight: var(--font-moy);
+}
+.form-control:focus{
+    box-shadow: none;
+}
+
+input[type='submit']:active{
+    transform: scale(.98);
+    -webkit-transform: scale(.98);
+    -moz-transform: scale(.98);
+    -ms-transform: scale(.98);
+    -o-transform: scale(.98);
+}
+input[type='submit']{
+    transition: .3s;
+    width: 100%;
+    background-color: var(--first-color);
+    color: #fff;
+    font-weight: var(--font-moy-plus);
+    border: none;
+    padding: 10px 0;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+#price{
+    padding-left: 20px;
+}
+span.dollar {
+    position: absolute;
+    top: 31px;
+    left: 23px;
+    font-weight: bold;
+    opacity: var(--opacity);
+}
